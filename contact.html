@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Emergency Locksmith Dublin</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.js"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+
+        <header class="site-header">
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="./" class="logo-container"> 
+                        <img src="static/media/i/logo-1024.png" alt="Emergency Locksmith Dublin">
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <a href="./">Home</a>
+                    <a href="contact">Contact</a>
+                </div>
+            </div>
+            <a href="tel:+353870000000" class="header-btn">
+                <i class="fa-solid fa-phone"></i> CALL
+            </a>
+        </header>
+        <main class="reveal-on-scroll">
+            <section class="contact-title">
+                <h1>Contact Us</h1>
+                <p class="subheadline-bold">For immediate assistance with an emergency, please call us directly on <br><span><a href="tel:+353870000000">087 000 0000</a></span></p>
+                <p class="subheadline">
+                    Reach out for general inquiries, or include photos of your issue for a quick estimate.
+                </p>
+            </section>
+            <div class="horizontal-fade"></div>
+            <section class="contact-section">
+                <div class="form-wrapper">
+                    <form id="requestForm">
+                        <div class="left-column">
+                            <input type="text" placeholder="Name" name="name" autocomplete="off">
+                            <input type="tel" placeholder="Mobile number*" name="phone_number">
+                            <input type="text" placeholder="Area / Location" name="area">
+                            <input type="text" name="subject" maxlength="100" autocomplete="off" tabindex="-1">
+                            <textarea maxlength="1000" placeholder="Your message&#10;Briefly describe the work required" name="message" rows="4"></textarea>
+                        </div>
+                        <div class="right-column">
+                            <div class="upload-container">
+                                <div class="upload-trigger" id="uploadTrigger">
+                                    <input type="file" id="fileInput" multiple accept="image/*" hidden>
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7a7a7a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                        <circle cx="12" cy="13" r="4"></circle>
+                                    </svg>
+                                    <span class="upload-title">Upload up to 8 images</span>
+                                    <span class="upload-text">max 10MB per image</span>
+                                    <span class="upload-text">JPEG, PNG, WebP, GIF, AVIF </span>
+                                    <span class="upload-status" id="uploadStatus">No image selected</span>
+                                </div>
+                                <div class="image-previews" id="imagePreviews">
+                                    
+                                </div>
+                            </div>
+                            <p>* Required</p>
+                            <button type="submit" class="submit-btn">
+                                <div id="submit-spinner" class="absolute loading-spinner-container spinner">
+                                    <div class="spinner-border show-spinner" role="status">
+                                        <span hidden>Loading...</span>
+                                    </div>
+                                </div>
+                                <p>Send</p>
+                            </button>
+                        </div>
+                    </form>
+                    
+                </div>
+                
+                
+            </section>
+            <div class="horizontal-fade"></div>
+            <section class="card">
+                <h1>Fast & Reliable<br>Locksmith Service</h1>
+                
+                <p>We serve all areas of Dublin with rapid, 24/7 response times. Our local locksmiths are ready to assist you!</p>
+
+                <div class="map-container">
+                    <img src="static/media/i/map.webp" alt="Dublin Map">
+                    
+                    <div class="map-controls">
+                        <div class="control-btn plus"><p>+</p></div>
+                        <div class="control-btn minus"><p>-</p></div>
+                    </div>
+                </div>
+
+                <ul class="features">
+                    <li class="feature-item">
+                        <img class="check-icon" src="static/media/i/tick.svg" alt="Tick Icon">
+                        24/7 Emergency Lockouts
+                    </li>
+                    <li class="feature-item">
+                        <img class="check-icon" src="static/media/i/tick.svg" alt="Tick Icon">
+                        Fast Response
+                    </li>
+                    <li class="feature-item">
+                        <img class="check-icon" src="static/media/i/tick.svg" alt="Tick Icon">
+                        Serving Dublin and Surroundings
+                    </li>
+                </ul>
+            </section>
+            <footer class="site-footer">
+                <div class="section-container">
+                    <div class="footer-wrapper">
+                        <div class="footer-cta">
+                            <h2>Locked Out? <span><a href="tel:+353870000000" class="footer-cta-btn">Call Now</a></span></h2>
+                            <a href="tel:+353870000000" class="footer-phone">
+                                <i class="fa-solid fa-phone"></i> 087 000 0000
+                            </a>
+                            
+                        </div>
+                        <div class="footer-cta">
+                            <div class="footer-areas">
+                                <span class="footer-areas-highlight">Serving All Areas of Dublin</span>
+                                City Centre &bull; Dublin 1-24 &bull; Northside &bull; Southside
+                            </div>
+                            <div class="footer-badge">
+                                <div class="badge-content">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    <div class="flex flex-row gap-10 align-center">
+                                        <div class="flex align-center justify-center">
+                                            <p class="larger-text">24/7</p>
+                                        </div>
+                                        <div class="flex">
+                                            <p>EMERGENCY<br>SERVICE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <a href="privacy-policy">Privacy Policy</a>
+                        <a href="terms-conditions">Terms &amp; Conditions</a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2026 Emergency Locksmith Dublin
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <div id="fullscreen-spinner" class="fixed loading-spinner-container spinner show">
+            <div class="spinner-border show-spinner" role="status">
+                <span hidden>Loading...</span>
+            </div>
+        </div>
+    </div>
+<script src="static/js/script.min.js"></script>
+<script src="static/js/map.min.js"></script>
+<script src="static/js/loader.min.js"></script>
+
+</body>
+</html>
